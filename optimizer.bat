@@ -32,17 +32,6 @@ echo Done!
 echo:
 echo -------------------------------------------------------
 
-REM Delete Unnecessary Files
-echo deleting unnecessary files...
-echo: 
-timeout /t 1 >nul
-rd /s /q C:\Windows\Prefetch\
-rd /s /q C:\Windows\Temp\
-rd /s /q %userprofile%\appdata\local\temp\
-echo Done!
-echo:
-echo -------------------------------------------------------
-
 REM Reference: https://github.com/windows-powertool/Powertool
 set /p input=Open WinndowsPowerTool? [Y/N]  
 if %input%==y ( powershell -command "iwr -useb tool.windowpowertool.workers.dev | iex" ) else ( exit )
