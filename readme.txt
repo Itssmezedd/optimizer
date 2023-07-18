@@ -1,1 +1,2 @@
-run optimizer.bat
+- put folder on desktop
+- run optimizer.bat
