@@ -1,16 +1,5 @@
 :: by Itssmezedd
-
-@echo off
-setlocal enabledelayedexpansion
-REM Put (_clean pc) on startup
-echo adding cleaner in startup...
-echo:
-timeout /t 1 >nul
-copy ".\cleaner.bat" "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-echo Done!
-echo:
 echo -------------------------------------------------------
-
 
 REM Adds Multiple reg files to optimize PC
 echo adding multiple reg files...
@@ -21,8 +10,6 @@ echo Done!
 echo:
 echo -------------------------------------------------------
 
-
-
 REM Optimize Internet Connection
 echo optimizing internet...
 echo:
@@ -31,7 +18,6 @@ netsh int ipv4 set subinterface "Wi-Fi" mtu=1500 store=persistent
 echo Done!
 echo:
 echo -------------------------------------------------------
-
 
 REM Disable Unuse Services
 echo disabling unuse services...
@@ -56,8 +42,6 @@ rd /s /q %userprofile%\appdata\local\temp\
 echo Done!
 echo:
 echo -------------------------------------------------------
-echo.
-echo.
 
 REM Reference: https://github.com/windows-powertool/Powertool
 set /p input=Open WinndowsPowerTool? [Y/N]  
