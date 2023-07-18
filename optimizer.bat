@@ -1,4 +1,7 @@
 :: by Itssmezedd
+@echo off
+
+echo:
 echo -------------------------------------------------------
 
 REM Adds Multiple reg files to optimize PC
